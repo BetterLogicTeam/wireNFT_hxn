@@ -3,6 +3,8 @@ import {Navbar,Footer} from './Containers';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 import {Home,Activate_History,Staking_Details,Profile, Referral_Income, Matching_Income,Reward_Income, Roi_Income, Matching_Level_Income, Buy_NFT, Withdrawal_History, Withdrawal, Direct_Leg_Business, Matching_Tree, My_Referral, My_Team, Coin_Address, NFT_Address, Self_Address,Level_Details} from './Routes';
+import Registration_Direct_Income from './Routes/All_Income/Registration_Direct_Income';
+import Activation_Direct_Income from './Routes/All_Income/Activation_Direct_Income ';
 
 function App() {
   return (
@@ -14,7 +16,11 @@ function App() {
           <Route path='/Activate_History' element={<Activate_History />} />          
           <Route path='/Staking_Details' element={<Staking_Details />} />                 
           <Route path='/Profile' element={<Profile />} />
-          <Route path='/Referral_Income' element={<Referral_Income />} />
+          {/* <Route path='/Referral_Income' element={<Referral_Income />} /> */}
+          <Route path='/Registration_Direct_Income' element={<Registration_Direct_Income />} />
+          <Route path='/Activation_Direct_Income' element={<Activation_Direct_Income />} />
+
+
           <Route path='/Matching_Income' element={<Matching_Income />} />
           <Route path='/Reward_Income' element={<Reward_Income />} />
           <Route path='/Roi_Income' element={<Roi_Income />} />
